@@ -4,20 +4,35 @@ Use one entry for each tool-assisted or agent-assisted task. Do not include secr
 
 ## Tool/agent task
 
-Describe the bounded task and the input you supplied.
+I used ChatGPT to review my implementation, explain assignment requirements and suggest edge cases and tests.
+
+The review focused on: validation, duplicate IDs, sorting, query methods, completion behavior and additional tests
 
 ## Output reviewed
 
-Summarize the output or changed files you reviewed.
+I reviewed suggestions for:
+- Sources/StudyPlanner/StudyPlanner.swift
+- Tests/StudyPlannerTests/StudyPlannerAdditionalTests.swift
+
+The main extra cases checked were: validation during decoding, sorting by title and ID, duplicate IDs during decoding, repeated markCompleted
 
 ## Accepted/rejected/revised decision
 
-Record what you accepted, rejected, or revised and why. If nothing was rejected or revised, state `none` and explain the review performed.
+I reviewed all suggestions before using them.
+
+Accepted:
+- validation improvements
+- sorting checks
+- additional XCTest coverage
+
+Revised:
+- some suggestions were changed to match the existing project structure
+- one decoding implementation was moved to the correct type
 
 ## Verification command/result
 
-Record the exact command and its result, such as `swift test`.
+- swift test
 
 ## Artifact links
 
-Link only curated, non-sensitive evidence stored in `artifacts/` or other repository files.
+- `artifacts/swift-test-output.txt`
